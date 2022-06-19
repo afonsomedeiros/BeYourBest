@@ -3,7 +3,7 @@ from flask_migrate import Migrate
 
 from .routes import home_route
 from .extensions import sqlalchemy
-from .models import User, Person, Professional
+from .models import User, Professional
 
 def create_app():
     app = Flask(__name__)
