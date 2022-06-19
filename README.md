@@ -5,12 +5,12 @@ Projeto Integrador II
 - [X] Criação de repositório.
 - [X] Criação de estrutura do projeto.
 - [ ] Importação de telas.
-- [ ] Criação de Modelos
+- [X] Criação de Modelos
 - [ ] Criação de rotas da API para CRUD
 - [ ] Criação de controllers para acesso aos dados.
 - [ ] Criação de autenticação.
 
-### Estrutura do projeto
+## 1 - Estrutura do projeto
 
 ```sh
 ├── LICENSE
@@ -45,6 +45,8 @@ Projeto Integrador II
 └── application.py
 ```
 
+### 1.1 - Arquivos e Diretórios
+
 Todos os arquivo **`__init__.py`** identificam a pasta onde eles estão como pacotes, isso ajuda o interpretador do python a localizar recursos.
 
 Vão notar que no GitHub não existem as pastas pycache, estas pastas são geradas automaticamente toda vez que executamos o projeto, elas criam uma imagem dos arquivos compilados para melhorar a performance nas próximas execuções.
@@ -67,16 +69,72 @@ A pasta **app** é a pasta do projeto.
 
 Arquivo **application.py** é o ponto de inicio do projeto.
 
-### Para execução do projeto.
+## 2 - Para execução do projeto.
 
-Antes de executar o projeto deve instalar as dependencias. Lembre-se de utilizar um ambiente virtual, para não poluir a instalação do python da sua máquina. Para instalar basta executar o comando abaixo.
+Para executar esse projeto é necessário ter instalado no seu computador:
+
+- [x] Python >= 3.7
+- [x] Virtualenv
+
+### 2.1 - Criando ambiente virtual e instalando pacotes.
+
+Com virtualenv instalado basta executar o comando abaixo na pasta do projeto para criar um novo ambiente virtual.
+
+Linux:
 
 ```sh
+python3 -m virtualenv venv # criação do ambiente virtual.
+source ./venv/bin/activate # para ativar ambiente virtual.
+```
+
+Windows:
+```sh
+virtualenv venv
+./venv/Script/activate
+```
+
+Para instalar os pacotes basta executar o comando abaixo:
+
+```
 pip install -r requirements.txt
 ```
 
-Depois, para executar o projeto execute o comando abaixo:
+### 2.2 - Variaveis de ambiente para execução do projeto.
+
+Definindo variaveis de ambiente em uma instancia local (nao há necessidade de criar variáveis de ambiente globais).
+
+-- necessário para utilização do CLI para execução, criação do banco de dados e migrações.
+
+Linux
+```sh
+export FLASK_APP=app
+export FLASK_ENV=Development
+export FLASK_DEBUG=True
+```
+
+Windows:
+```sh
+set FLASK_APP=app
+set FLASK_ENV=Development
+set FLASK_DEBUG=True
+```
+
+### 2.3 - Criando tabelas no banco de dados:
 
 ```sh
+flask db init
+flask db migrate
+flask db upgrade
+```
+
+### 2.4 - Executando projeto.
+
+1ª Forma:
+```sh
 python application.py
+```
+
+2ª Forma:
+```sh
+flask run
 ```
