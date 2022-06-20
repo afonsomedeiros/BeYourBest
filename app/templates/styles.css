@@ -1,0 +1,252 @@
+*{ /* Configurações globais das CSS */
+    height: 100%;
+}*
+
+/* Configurações padrão*/
+
+.titulo{
+    height: 50px;;
+    width: 100%;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color:orangered;
+}
+
+.p_text{
+    font-size: 25px;
+}
+
+h1{
+    font-size: 40px;
+    color: orangered;
+    font-weight:bold;
+    font-style:italic;
+    margin-top:40px;
+}
+
+body{
+    height: auto;
+    background-image: linear-gradient(to bottom, #363636, #1C1C1C, black);
+}
+
+.white-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5vh auto;
+    background-color: #E6E6E6; 
+    border-bottom: none;
+    min-height: 515px;
+}
+
+.white-box-qm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    margin: 5vh auto;
+    background-color: #E6E6E6; 
+    border-bottom: none;
+    min-height: 515px;
+    box-shadow: 2px 2px 10px;
+    border-radius: 15px;
+}
+
+.nav{
+    float: left;
+    background-color: #1C1C1C;
+    width: 200px;
+    height: 525px;
+    border: none;
+    border-radius: 15px;
+    padding: 0;
+}
+
+.lista-nav{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nutri{
+    border-top: solid;
+    border-color: #1C1C1C;
+    height: 75px;
+    text-align:center;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+
+button{
+    border-radius: 10px;
+    float: right;
+    margin-right: 50px;
+    height: 45px;
+    width: 85px;
+    color: white;
+    background-color:orangered;
+}
+
+ul li{
+    color:orangered;
+  }
+
+.item-nav{
+    font-size: larger;
+    height: 40px;
+    margin: 30px 10px;
+    padding: 5px;
+}
+
+footer {
+    bottom: 0;
+    position: absolute;
+    background-color: #333;
+    width: 90%;
+    height: 0%;
+}
+
+footer p {
+    margin-left: 60px;
+    color: #f5f5f5;
+    text-align: center;
+    height: 10px;
+    width:100%;
+}
+
+.img-perfil{
+    display: flex;
+    padding-top: 25px;
+    background-color: none;
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome-perfil{
+    display: flex;
+    background-color: none;
+    height: 50px;
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 20px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.prof-perfil{
+    display: flex;
+    background-color: none;
+    height: 50px;
+    width: 500px;
+    margin-top: 30px;
+    margin-left: 20px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.container-perfil-a{
+    display: flex;
+    flex-direction: row;
+}
+
+.container-perfil-b{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-perfil-c{
+    display: flex;
+    flex-direction: row;
+}
+
+.edit-perfil-a{
+    margin-top: 53px;
+}
+
+.edit-perfil-b{
+    margin-top: 33px;
+}
+
+input{
+    margin-left: 20px;
+    height: 25px;
+    width: 380px;
+}
+
+.circle-image img {
+    object-fit: cover;
+    display: inline-block;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.imagem {
+    text-align : center;
+    height: 100px;
+    font-weight: bold;
+    margin-top:20px;
+}
+
+.tabela_nav {
+        height: 50px;
+        width: 100%;
+        padding:0px;
+        margin-top:40px;
+}
+
+.tabela {
+    width: 100%;
+    user-select: none;
+    text-align: left;
+}
+
+.tabela th{
+    height: 50px;
+    background-color: orangered;
+    padding-left: 20px;
+    font-size: 1,5rem;
+    color: white;
+}
+
+.tabela td{
+    height: 50px;
+    padding-left: 20px;
+}
+
+.tabela td:last-child{
+    text-align: center;
+    padding: 0;
+    min-width: 140px;
+}
+
+.tabela tr:hover{
+    background-color: #FAF0E6;
+}
+
+.lista-de-itens {
+    display:inline;
+    float:center;
+    list-style:none;
+    text-align:center;
+    margin:0px; 
+    padding:0px; 
+}
+
+.item {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin:0px; 
+    padding:0px;
+    width:100%;
+}
